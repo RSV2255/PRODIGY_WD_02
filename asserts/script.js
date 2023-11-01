@@ -118,6 +118,7 @@ const reset = () => {
     min = 0;
     hr = 0;
     centisec = 0;
+    clear();
 }
 
 const lap = () => {
