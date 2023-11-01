@@ -4,7 +4,7 @@
 body {
     width: 100vw;
     max-height: 100vh;
-    background-color: rgb(229, 145, 250);
+    background-color: black;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -26,9 +26,10 @@ body {
     justify-content: center;
     align-items: center;
     border: 10px solid orangered;
-    background-color: white;
+    background-color: transparent;
     border-radius: 20px;
     margin-top: 60px;
+    color: white;
 }
 
 .watch h1{
@@ -54,14 +55,21 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
-.reset, .lap {
+
+.hidden {
     visibility: hidden;
 }
 .lapcount {
     margin-right: 30px;
+
 }
 .laps {
     margin-top: 15px;
+    border: 0.884px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 .laps span {
     font-size: 25px;
@@ -71,6 +79,10 @@ body {
     height: 250px;
     overflow-y: scroll;
 }
+.lapTimes ul {
+    padding: 0px;
+    color: white;
+} 
 .lapTimes::-webkit-scrollbar {
     display: none;
 }
