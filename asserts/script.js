@@ -131,7 +131,11 @@ const lap = () => {
     timestamp.className = "timestamp";
 
     number.innerHTML = `#${++lapCount}`;
-    timestamp.innerHTML = `${(hr < 9)?`0${hr}`:hr} : ${(min < 9)?`0${min}`:min} : ${(sec < 9)?`0${sec}`:sec} : ${(centisec < 9)?`0${centisec}`:centisec}`;
+    timestamp.innerHTML = `
+    ${(hr < 9)?`0${hr}`:hr} : 
+    ${(min < 9)?`0${min}`:min} : 
+    ${(sec < 9)?`0${sec}`:sec} : 
+    ${(centisec < 9)?`0${centisec}`:centisec}`;
     
     laps.append(li);
     li.append(number, timestamp);
